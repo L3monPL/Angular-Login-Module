@@ -1,3 +1,7 @@
+![angular_login](https://user-images.githubusercontent.com/81305180/176179169-d1bf2d2c-bf19-491a-8b73-8287952a9f67.png)
+![angular_home](https://user-images.githubusercontent.com/81305180/176179174-684286fe-935c-4ad6-b093-bb0ca7264f7e.png)
+
+
 # AngularLoginModule
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.8.
