@@ -1,0 +1,30 @@
+<div class="login-wrapper">
+        <main>
+            <div class="row">
+                <div class="colm-form">
+                    <div class="form-container">
+                        <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+                            <input #email type="email" id="email" formControlName="email"name="email" placeholder="Email" type="text" >
+                            <div *ngIf="f['email'].touched && f['email'].invalid" class="alert alert-danger">
+                                <div *ngIf="f['email'].errors && f['email'].errors['required']">Email is required.</div>
+                                <div *ngIf="f['email'].errors && f['email'].errors['email']">Please, enter valid email address.</div>
+                            </div>
+
+                            <input #password type="password" id="password" placeholder="Password" formControlName="password" name="password" >
+                            <div *ngIf="f['password'].touched && f['password'].invalid" class="alert alert-danger">
+                                <div *ngIf="f['password'].errors && f['password'].errors['required']">Name is required.</div>
+                            </div>
+
+                            <button [disabled]="loginForm.invalid" (click)="loginProc(email.value,password.value)" value="Login" type="submit" class="btn-login">Login</button>
+                        </form>
+                        <h4 class="text_test_form">Testowe dane</h4>
+                        <h5>Email: admin@gmail.com</h5>
+                        <h5>Password: admin</h5>
+                    </div>
+                </div>
+            </div>
+        </main>
+</div>
+
+
+

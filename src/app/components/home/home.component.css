@@ -1,0 +1,14 @@
+.logout_button_home{
+    display: flex;
+    margin-top: 10rem;
+    justify-content: center;
+}
+.btn-login {
+    background-color: #1877f2;
+    border: none;
+    border-radius: 6px;
+    font-size: 20px;
+    padding: 10px 25px;
+    color: #ffffff;
+    font-weight: 700;
+}
